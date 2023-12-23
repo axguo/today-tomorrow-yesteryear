@@ -2,6 +2,7 @@ body,
 html {
     font-family: "Inconsolata", monospace;
     background-color: rgb(160, 152, 145);
+    background-color: rgb(255, 252, 249);
 }
 
 .journal-entry {
@@ -12,6 +13,7 @@ html {
     background-color: rgb(255, 252, 249);
     padding: 40px;
     margin: auto;
+    border: 1px solid;
 }
 
 .date {
