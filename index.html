@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Journal</title>
     <script src="https://unpkg.com/rita@3.0.23/dist/rita.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <!-- Add your CSS links here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <div id="journal-entry">
-        <p id="date">date</p>
-        <p id="entry-text">text</p>
-    </div>
-    <button id="prev">Previous</button>
-    <button id="next">Next</button>
 
-    <!-- Add your JavaScript links here -->
+<body>
+    <div class="journal-entry">
+        <div id="date" class="date">date</div>
+        <div class="line-container">
+            <div class="triangle-right"></div>
+            <div class="line"></div>
+            <div class="triangle-left"></div>
+        </div>
+
+        <div id="entry-text" class="entry-text">text</div>
+
+        <div class="note-nav">
+            <button id="prev" class="nav-button"></button>
+            <button id="next" class="nav-button"></button>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
     <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,100 @@
+body,
+html {
+    font-family: "Inconsolata", monospace;
+    background-color: rgb(160, 152, 145);
+}
+
+.journal-entry {
+    width: 330px;
+    /* Adjust the width as needed */
+    height: 600px;
+
+    background-color: rgb(255, 252, 249);
+    padding: 40px;
+    margin: auto;
+}
+
+.date {
+    font-size: 14px;
+    text-align: left;
+    width: 120px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 7px 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+.entry-text {
+    font-size: 16px;
+    height: 450px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    /* Preserves spaces and line breaks */
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+}
+
+
+/* horizontal line */
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.triangle-left, .triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent; /* size of the triangle - adjust as needed */
+  border-bottom: 3px solid transparent; /* size of the triangle - adjust as needed */
+}
+
+.triangle-left {
+  border-right: 4px solid black; /* color and size of the triangle */
+}
+
+.triangle-right {
+  border-left: 4px solid black; /* color and size of the triangle */
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px; /* thickness of the line */
+  background-color: black;
+}
+
+
+/* navigation buttons */
+
+.note-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#prev {
+  background-image: url('left.png'); 
+}
+
+#next {
+  background-image: url('right.png');
+}
+
+.nav-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 20px; /* Set the width of the button */
+  height: 20px; /* Set the height of the button */
+  background-size: contain; /* Ensure the image fits within the button */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-position: center; /* Center the background image */
+  
+}
