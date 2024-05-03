@@ -1,21 +1,32 @@
 body,
 html {
     font-family: "Inconsolata", monospace;
-    background-color: rgb(160, 152, 145);
     background-color: rgb(255, 252, 249);
 }
 
 .journal-entry {
-    width: 330px;
-    /* Adjust the width as needed */
-    height: 600px;
-
+    width: 40vw;
+    height: 75vh;
+    min-width: 330px;
+    min-height: 600px;
     background-color: rgb(255, 252, 249);
     padding: 40px;
     margin: auto;
     border: 1px solid;
 }
 
+@media (max-width: 600px) {
+    .journal-entry {
+        width: 80vw;
+        min-width: 100px;
+        padding: 20px;
+    }
+
+    .entry-text {
+      min-width: none;
+      min-height: none;
+    }
+}
 .date {
     font-size: 14px;
     text-align: left;
@@ -32,7 +43,8 @@ html {
 
 .entry-text {
     font-size: 16px;
-    height: 450px;
+    min-height: 450px;
+    height: 60vh;
     line-height: 1.5;
     white-space: pre-wrap;
     /* Preserves spaces and line breaks */
